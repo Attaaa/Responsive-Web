@@ -44,5 +44,59 @@
             </nav>
         </center>
     </header>
+    <section class="full">
+            <div id="container-button">
+                <button class="btn putih" onclick="loginform()">Login</button>
+                <button class="btn abu" onclick="registerform()">Register</button>
+            </div>
+            <div id="login">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button id="btnlogin" onclick="">Login</button>
+            </div>
+            <div id="register">
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button id="btnregister" onclick="">Register</button>
+            </div>
+    </section>
+
+    <script>
+        function navclick(){
+            var x = document.getElementsByClassName("container-mobile");
+            x[0].className += " in";
+        }
+        function back(){
+            var x = document.getElementsByClassName("container-mobile in");
+            x[0].className = "container-mobile";
+        }
+        function loginform(){
+            var a = document.getElementById("login");
+            var b = document.getElementById("register");
+            var x = document.getElementsByClassName("putih");
+            var y = document.getElementsByClassName("abu");
+            a.style.display = "flex";
+            x[0].style.backgroundColor = "white";
+            x[0].style.color = "gray";
+            b.style.display = "none";
+            y[0].style.backgroundColor = "dodgerblue";
+            y[0].style.color = "white";
+        }
+        function registerform(){
+            var a = document.getElementById("login");
+            var b = document.getElementById("register");
+            var x = document.getElementsByClassName("putih");
+            var y = document.getElementsByClassName("abu");
+            b.style.display = "flex";
+            y[0].style.backgroundColor = "white";
+            y[0].style.color = "gray";
+            a.style.display = "none";
+            x[0].style.backgroundColor = "dodgerblue";
+            x[0].style.color = "white";
+        }
+    </script>
+
 </body>
 </html>

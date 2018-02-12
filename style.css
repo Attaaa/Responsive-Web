@@ -73,6 +73,90 @@ section {
     flex: 0 2 65%;
     text-align: center;
     margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 4px gray;
+}
+
+.full{
+    margin-top: 70px;
+    flex: 0 1 35%;
+    border-radius: 4px;
+}
+
+#container-button{
+    width: 100%;
+}
+
+.putih{
+    background-color: white;
+    transition: .1s all;
+    border-radius: 4px;
+}
+
+.abu{
+    color: white;
+    background-color: dodgerblue;
+    transition: .1s all;
+    border-radius: 2px;
+}
+
+#container-button .btn{
+    padding: 20px;
+    width: 49.61%;
+    margin: 0;
+    border: none;
+}
+
+#login{
+    justify-content: center;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    transition: 1s all;
+}
+
+button{
+    outline: none;
+}
+
+#register{
+    justify-content: center;
+    margin-top: 20px;
+    display: none;
+    flex-flow: row wrap;
+    padding: 10px;
+    transition: 1s all;
+}
+
+#login input, #register input{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    flex: 0 1 60%;
+    height: 25px;
+    border-radius: 4px;
+    border: .5px solid gray;
+    padding: 6px;
+    overflow: hidden;
+    color: gray;
+}
+
+#btnlogin, #btnregister{
+    border: none;
+    background-color: dodgerblue;
+    padding: 15px;
+    border-radius: 4px;
+    width: 60%;
+    clear: both;
+    color: white;
+    margin-bottom: 20px;
+    transition: .5s ease;
+}
+
+#btnlogin:hover, #btnregister:hover{
+    background-color: dimgray;
 }
 
 .banner {
@@ -135,6 +219,11 @@ aside {
     .item-1 > h3 {
         top: 35%;
     }
+
+    .full{
+        flex: 0 1 70%;
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 783px){
@@ -158,12 +247,12 @@ aside {
         transition: right .5s ease-out;
         -webkit-transition: right .5s ease-out;
     }
-    .in {
+    .in{
         right: 0;
         transition: right .5s ease-in;
         -webkit-transition: right .5s ease-in;
     }
-    ul.mnav {
+    ul.mnav{
         display: block;
         list-style-type: none;
         width: 100%;
@@ -207,6 +296,10 @@ aside {
     }
     section {
         flex: 0 1 100%;
+    }
+    .full{
+        flex: 0 1 80%;
+        margin-bottom: 20px;
     }
     aside {
         flex: 0 1 100%;
