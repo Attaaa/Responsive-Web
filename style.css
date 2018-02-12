@@ -75,13 +75,13 @@ section {
     margin-top: 35px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 0 4px gray;
 }
 
 .full{
     margin-top: 70px;
     flex: 0 1 35%;
     border-radius: 4px;
+    box-shadow: 0 0 4px gray;
 }
 
 #container-button{
